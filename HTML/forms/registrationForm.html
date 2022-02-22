@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sundaeForm</title>
+</head>
+<body>
+    <form>
+        <div>
+        <label for="flavor">Flavor</label>
+        <input name="flavor"type="text" placeholder="vanilla, chocolate, strawberry,etc."> 
+        </div>
+
+        <div>
+        <label for="numScoops">How many scoops</label>
+        <input name="numScoops"type="number"> 
+        </div>
+
+        <div>
+            <label for="Password">Password</label>
+        <input name="Password"type="password"> 
+        </div>
+        <div>
+            <label for="CreationDate">When was this idea invented</label>
+        <input name="CreationDate"type="datetime-local"> 
+        </div>
+
+        <div>
+            <label for="topping">Topping:</label>
+        <select name="topping">
+            <option>
+                Hot fudge
+            </option>
+            <option >Rainbow spranks</option> <!-- option*5 makes 5 tags-->
+            <option >Crushed cherries</option>
+            <option >Caramel</option>
+            <option >Whipped cream</option>
+            <option >boba</option>
+        </select>
+        </div>
+
+        <div>
+            <label for="description">Description</label>
+        <textarea name="description"> </textarea> <!-- can define rows/cols maxlength-->
+        </div>
+        <div>
+            <label for="whipped">whipped cream?</label>
+        <input name="whipped"type="checkbox"> 
+        </div>
+
+        <div>
+            <label for ="rating">How good is it?</label>
+            <label for="rating">1</label>
+            <input name="rating"type="radio" value="1">
+            <label for="rating">2</label>
+            <input name="rating"type="radio" value="2">
+            <label for="rating">3</label value="3"> <!-- use value so it can send info to server-->
+            <input name="rating"type="radio"> 
+        </div>
+        <input type="submit" value="clickme!">
+        <button type="submit">click the button!</button> <!--command slash makes part of code into comment-->
+    </form>
+</body>
+</html>
